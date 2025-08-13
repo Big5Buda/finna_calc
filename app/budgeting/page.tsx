@@ -1,7 +1,7 @@
 import { Calculator, TrendingUp } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import { Button } from "../../../../Desktop/FinnaCalc/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../../../Desktop/FinnaCalc/components/ui/card"
+import { Input } from "../../../../Desktop/FinnaCalc/components/ui/input"
 import Link from "next/link"
 
 export default function BudgetingPage() {
@@ -11,12 +11,12 @@ export default function BudgetingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link href="/" className="flex items-center">
+              <Link href="/public" className="flex items-center">
                 <Calculator className="h-8 w-8 text-blue-600" />
                 <span className="ml-2 text-xl font-bold text-gray-900">FinnaCalc</span>
               </Link>
             </div>
-            <Link href="/">
+            <Link href="/public">
               <Button variant="outline">Back to Home</Button>
             </Link>
           </div>
@@ -74,7 +74,7 @@ export default function BudgetingPage() {
 
           <div className="mt-8">
             <p className="text-gray-600 mb-4">Start managing your finances with our current calculators:</p>
-            <Link href="/">
+            <Link href="/public">
               <Button variant="outline" className="mr-4">
                 View All Calculators
               </Button>
